@@ -1,0 +1,495 @@
+html { scroll-behavior: smooth; } 
+
+*
+{
+    font-family: "Montserrat", "Trebuchet MS", Verdana, Georgia;
+}
+
+#Portfo, #ID, #CV, #Acquis, #Infos, #Exp, #Stage, #PIR,  #Hacka, 
+#SmartD, #Gaz, #PCB, #Comm, #SansFil, #Secu, #Serv, #SOA, #IOT, 
+#Cloud, #DataP, #Soft, #Semantic, #BigData, #Project, 
+#AlisonProject, #Human, #Sport, #Créativité, #Psycho
+{
+        padding-top: 150px;
+        margin-top: -150px;
+}
+
+a 
+{
+    color : grey;
+}
+
+a:hover
+{
+    color : #82170F;
+}
+
+body
+{
+    background-color: #E8D0CA;
+    padding: 30px;
+    padding-top: 100px; 
+    z-index : 1000;
+
+}
+
+.translate {
+    float : left;
+    margin-left : 0px;
+    margin-right : 10%;
+    position : relative; 
+
+}
+.translate a 
+{
+    font-family: "Vibur";
+}
+.translate a:hover 
+{
+    color : #82170F;
+}
+
+.navtech
+{
+
+    background-color : #E8D0CA;
+    font-size : 18px;
+    font-weight : 100;
+    z-index : 1000;
+    position : fixed;  
+    padding-left: 0%;
+    top:0px;
+
+}
+
+.navtech ul
+{
+    list-style-type: none;
+    text-align : center; 
+}
+
+.navtech ul li 
+{
+    float: left;
+    text-align : center;
+    position : relative; 
+
+}
+
+
+.navtech ul::after 
+{
+    content: "";
+    display : block; 
+    clear : both;
+}
+
+.navtech a
+{
+    display : block;
+    text-decoration: none;
+    color : black;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+}
+
+.som {
+    margin-left: 3%;
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+
+.som a:hover
+{
+    color : #82170F;
+}
+
+#deroulant > a::after{
+    content: "  ↓ ";
+    color : #82170F;
+}
+
+#deroulant a:hover
+{
+    color : #82170F;
+}
+
+.sous
+{
+    float : none;
+    display : none;
+    width : 100%;
+    position: absolute;
+    box-shadow: 0px 1px 2px #1a1a1a;
+    background-color : white;
+    padding: 0px;
+}
+
+
+.navtech > ul li:hover .sous
+{
+    display : block;
+    float : left;
+}
+
+.sous li 
+{
+    float:top;
+    width : 100%;
+    position: relative;
+    z-index : 1000;
+    text-align: left;
+    border: 0.5px solid grey;
+    background-color: white;
+}
+
+.sous a
+{
+    padding: 2px;
+}
+
+.sous a:hover
+{
+    border-bottom: 3px solid  #82170F;
+    position : relative;
+    z-index : 1000;
+    background-color: rgb(240,240,240);
+}
+
+.page
+{
+    background-color: white;
+    width : 100%;
+    position: relative; 
+}
+
+header
+{
+    padding : 20px;
+    text-align : left;
+    color : black;
+}
+
+.fond
+{   
+    /* Image de présentation */
+    width : 70%; 
+    background-image: url('Images/theme.jpg');
+    opacity:1;
+    background-repeat: no-repeat;
+    background-size : cover; 
+    position : relative; 
+    padding: 15%;
+
+}
+
+/* Titre sur l'image */
+.text 
+{
+    padding : 50px;
+    background-color : rgba(240, 240, 240, 0.5);
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+
+header h1
+{
+    color : #82170F;
+    font-size:  90px;
+    font-family: "Vibur";
+    padding : 0px;
+    margin : 0px;
+}
+
+header h2
+{
+    color : black;
+    font-size : 30px;
+    font-family: "Special Elite";
+    font-weight : bold;
+    padding : 0px;
+    margin : 0px;
+}
+
+header h3
+{
+    color :rgb(40,40,40);
+    padding-top : 2px;
+    font-size : 20px;
+    font-style: normal;
+    font-weight : lighter;
+    font-family:  "Special Elite";
+    margin : 0px;
+    
+}
+
+/* Proriétés générales de toutes les parties */
+
+.souspart
+{
+    padding-left : 40px;
+    padding-right : 40px;
+    text-align: justify;
+}
+
+.titre-souspart
+{
+    color : #82170F;
+    font-family: "Special Elite";
+    font-size : 40px;
+    font-weight: bolder;
+    padding-bottom : 5px; 
+    margin: 0px;
+}
+
+
+.souspart h1
+{
+    font-size : 40px;
+    color : grey; 
+    font-family : "Vibur";
+    margin: 10px;
+    padding-top : 0px; 
+    padding-bottom : 0px; 
+
+}
+.souspart h2
+{
+    font-size : 25px;
+    color : black; 
+    font-family : "Montserrat";
+    margin : 0px;
+    padding-bottom : 3px; 
+    padding-top : 5px; 
+}
+.souspart h3
+{
+    font-size : 20px;
+    color : #82170F;
+    padding-bottom : 15px;
+    margin : 0px;
+    font-family : "Montserrat";
+    font-weight : normal;
+    padding-top : 0px; 
+}
+
+.souspart h5
+{
+    font-size : 20px;
+    color : #82170F;
+    font-family : "Montserrat";
+    font-weight : bold;
+    margin-top : 50px; 
+    margin-bottom : 20px; 
+}
+.data
+{
+    color : rgba(60,60,60); 
+    text-align: justify;
+    font-size : 16px;
+    font-weight : 200;
+}
+
+
+/* Page principale */
+
+nav
+{
+    padding-left : 12px;
+    padding-right : 12px; 
+    width : 100%;
+}
+
+.sommaire a
+{
+    color : #82170F;
+}
+
+.sommaire a:hover
+{
+    color : grey;
+}
+
+/* Generalités */
+
+.p-gene {
+    margin-bottom : 100px;
+}
+
+.download
+{
+    color : #82170F;
+    font-size : 18px;
+    text-decoration: none;
+}
+
+.legende-niv
+{
+    padding-left : 50px;
+    padding-bottom: 20px;
+}
+table a 
+{
+    color : rgb(120,120,120); 
+}
+
+.table-acquis
+{
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.first-line-tab 
+{
+    background-color : #82170F;
+    color : white;
+    font-weight : bold;
+}
+
+.titre-uf
+{
+    background-color : #B57E7A;
+    color : white;
+    margin: 10px 20px;
+    width : 400px;
+    border: 1px solid rgb(190,190,190);
+    text-align: left;
+    font-weight : bold;
+}
+
+.sous-UF
+{
+    font-weight : bold;
+    text-align : left;
+    background-color: rgb(210,210,210);
+}
+
+td {
+    border: 1px solid rgb(190,190,190);
+    text-align: left;
+    padding: 10px 20px;
+}
+
+/* Descriptive et Technique */
+
+#inf {
+    padding-bottom : 50px; 
+}
+
+
+
+.div-exp, .div-cours
+{
+    text-align : justify; 
+    margin-top : 50px;
+    padding-bottom : 250px;
+}
+
+.div-exp strong, .div-cours strong 
+{
+    color: #B57E7A;
+}
+
+.div-exp h4, .div-cours h4
+{
+    color : #B57E7A;
+    margin-bottom : 2px; 
+}
+
+.sous-part-exp {
+    color : black;
+    font-weight: bolder;
+    text-align: center; 
+    font-family : "Vibur";
+    font-size: 24px;
+}
+
+.nav-stage
+{
+    padding-left : 50%;
+    width : 40%;
+}
+
+.button-contener {
+    width : 100%;
+    display : flex; 
+    justify-content : space-evenly;
+    margin-top : 20px;
+    margin-bottom : 10px; 
+}
+
+.button {
+    display : flex;
+    flex-direction : row;
+    justify-content: center;
+    padding-top : 20px;
+}
+
+.button a 
+{
+    width:400px;
+    line-height:50px;
+    text-align:center;
+    background: #B57E7A;
+    border-radius: 8px;
+    color:white;
+    text-decoration:none;
+    box-shadow: 1px 1px 10px grey, 
+                 0 1px 0 rgba( 255, 255, 255, 0.4);
+}
+.button a:hover 
+{
+    background: #E8D0CA;
+    color : black;
+    box-shadow: 1px 1px 10px black inset, 
+                 0 1px 0 rgba( 255, 255, 255, 0.4);
+}
+
+
+.imagetech {
+    width:300px;
+    height:300px;  
+    margin-top : 50px;
+    margin-left : 50px;
+    margin-right : 50px;
+    margin-bottom : 50px;
+}
+
+/* Pied de page général */
+
+footer
+{
+    text-align : right;
+    font-family : "Vibur";
+    padding-right : 40px;
+    padding : 10px;
+}
+footer a 
+{
+    font-style: italic;
+}
+
+.logos-conteneur
+{
+    width : 40%;
+    display: flex;
+    flex-wrap: nowrap;
+    position : relative;
+    left : 60%;
+    justify-content: flex-end;
+    padding : 10px;
+}
+
+.logo
+{
+    padding : 0px;
+    margin : 0px;
+    display : flex;
+    position: relative;
+    justify-content: flex-end;
+}
+

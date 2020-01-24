@@ -1,0 +1,296 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style_portfolio.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet">
+        <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript"> function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element');
+        } </script>
+        <title>Portfolio - Mathilde Cornille</title>       
+    </head>
+
+    <body>
+        
+ 
+                <nav class="navtech"> 
+                    <ul>
+                            <li class="translate"><a href="portfolio.html">Portfolio de Mathilde Cornille</a><div id="google_translate_element"></div></li>
+                            <li class="som" ><a href="portfolio.html">Page principale</a></li>
+                            
+                            <li class="som" id="deroulant"><a href="generalities.html">Généralités</a>
+                                <ul class="sous">
+                                    <li><a href="generalities.html#Portfo">Le Portfolio </a></li>
+                                    <li><a href="generalities.html#ID">Identité </a></li>
+                                    <li><a href="generalities.html#CV">CV</a></li>
+                                    <li><a href="generalities.html#Acquis">Acquis de formation</a></li>
+                                </ul>
+                            </li>
+                            <li class="som" id="deroulant"><a href="descriptive.html" style="font-weight:bold;">Partie descriptive</a>
+                                <ul class="sous">
+                                    <li><a href="#Infos">Informations</a></li>
+                                    <li><a href="#Exp">Expériences extérieures</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="som" id="deroulant"><a href="technique.html">Partie technique</a>
+                                <ul class="sous">
+                                    <li><a href="technique.html#SmartD">Capteur intelligent</a></li>
+                                    <li><a href="technique.html#Comm">Communication</a></li>
+                                    <li><a href="technique.html#Serv">Intergiciels & Services</a></li>
+                                    <li><a href="technique.html#DataP">Analyse et traitement de données</a></li>
+                                    <li><a href="technique.html#Project">Projet innovant</a></li>
+                                    <li><a href="technique.html#Human">Innovation & Humanité</a></li>
+                                </ul>
+                            </li>
+            
+                            <li class="som"><a href="analytique.html">Partie analytique</a></li>
+            
+                        </ul>
+                </nav>
+            
+        
+            <div class="page">
+            <header>
+                    <div class="fond">
+                        <!-- Titre -->
+                        <div class="text">
+                            <h1>Portfolio de Mathilde Cornille</h1>
+                            <h2>INNOVATIVE SMART SYSTEMS</h2>
+                            <h3>Septembre 2019 - Janvier 2020</h3>
+                        </div>
+                    </div>
+            </header>
+
+
+            <p>
+                <div class="souspart">
+                    <p class="titre-souspart">Description</p>
+                    <p class="data">
+                        
+                        <h1 id="Infos">Informations utiles</h1>
+                        <p id="inf">
+                        Dans cette section je présente l'ensemble de mes expériences externes à la formation. Ces expériences sont mentionnées dans ce portfolio car en
+                        relation avec le contexte de ma formation et particulièrement avec l'Internet des Objets, domaine auquel je me forme depuis
+                        plusieurs années. </br></br>
+                        
+                        Pour chacune de ces expériences je mentionnerai le contexte dans lequel j'ai pu réaliser ces expériences et mon rôle dans chacune d'elles.
+                        J'expliquerai également le travail que j'y ai effectué.</br></br>
+
+                        Cette partie est ainsi un complément à ma formation PTP ISS.</br></br>
+                        </p>
+                        
+
+                        <h1 id="Exp">Expériences extérieures</h1>
+
+
+                        <div class="div-exp" id="Stage">
+                
+                        <h2>Stage ingénieur de quatrième année</h2>
+                        <h3>Chaire Smart Mobility - INSA Toulouse & ACTIA - Juin à Septembre 2019</h3>
+
+                        <img 
+                            src="Images/stage.jpg"
+                            style="width:400px; height:530px; vertical-align: center; float: left; margin: 20px;"
+                        >
+                        
+                        <p class="sous-part-exp">Contexte</p>
+
+                            De juin à septembre 2019 j'ai eu l'opportunité d'effectuer un stage ingénieur dans l'IoT. 
+                            J'ai effectué ce stage à l'INSA Toulouse dans le cadre de la chaire <strong>Smart Mobility</strong> 
+                            en partenariat avec le <strong>groupe ACTIA</strong>.
+                        </br>
+
+                        <p class="sous-part-exp">Problématique</p>
+
+                            Le sujet de ce stage concernait l'analyse de la mobilité des personnes sur le campus de l'INSA. En effet, 
+                            dans un contexte de mobilité intelligente il est intéressant de comprendre les déplacements des piétons 
+                            afin d'aménager au mieux les espaces publics et la voirie.  </br>
+                        </br>
+
+                        <p class="sous-part-exp">Ma solution</p>
+                            La solution d'analyse de la mobilité que j'ai pu mettre en oeuvre durant ce stage est basée sur le deploiement 
+                            de caméras sur le campus et sur un traitement vidéo local.
+                        </br>
+                            Le travail que j'ai effectué peut être synthétisé en quatre grandes parties :
+                            <nav class="nav-stage">
+                                <ul>
+                                    <li>La détection des personnes</li>
+                                    <li>Le tracking des personnes détectées</li>
+                                    <li>L'envoi de métadonnées via la plateforme OM2M</li>
+                                    <li>La création d'une application web simple</li>
+                                </ul>
+                            </nav>
+ 
+                        <h4>1. La détection des personnes</h4>
+                            La détection de personnes est réalisée par traitement vidéo en local. J'ai pour cela utilisé une Nvidia Jetson 
+                            Nano et une raspicam v2. Le traitement a lieu en local dans un soucis de sécurité, ainsi seulement des métadonnées
+                            du type "Tant de personnes à tel endroit à tel instant" sont transmises sur internet. 
+                            L'intérêt de cette solution est d'utiliser une caméra pour couvrir une grande zone. Seulement, cela pose un problème 
+                            important : détecter les personnes depuis un angle de vue en hauteur (toit d'un bâtiment ou étage élevé). De nombreuses 
+                            librairies et techniques de deep learning permettent une détection très satisfaisante des piétons à hauteur du sol, 
+                            mais il a été très difficile de trouver une technique permettant la détection de haut. La solution que j'ai retenue est 
+                            basée sur un algorithme de reconnaissance utilisant YoloV3 (You Only Look Once v3). Cette solution a pour avantage d'être 
+                            plus rapide puisque chaque image n'est parcourue qu'une seule fois. 
+                            
+                        <h4>2. Le tracking des personnes détectées</h4>
+                            Une fois les personnes détectées il m'a fallut les trackées afin d'analyser les déplacements des personnes sur le campus. 
+                            Les informations tirées de cette analyse seront du type "Durant telle période, tant de personnes sont passées par tel endroit". 
+                            Ici, j'ai été confrontée à un problème de rapidité. Ne parvenant pas à travailler sur le GPU de la Jetson Nano, le traitement 
+                            n'était pas réalisé exactement en temps réel, certains trackers perdaient alors la trace de la personne. Pour limiter ce décalage 
+                            j'ai décidé de ne pas effectuer la reconnaissance à chaque frame mais plutôt toutes les n frames (8 par défaut). Le tracking est 
+                            alors plutôt satisfaisant. Il serait intéressant d'effectuer une analyse plus détaillée du déplacement d'une personne en particulier.
+
+                        
+                        <h4>3. L'envoi de métadonnées via la plateforme OM2M</h4>
+                            Comme évoqué précédemment, pour un soucis de sécurité il était nécessaire de ne transmettre sur internet que des métadonnées. 
+                            Ces métadonnées sont tirées du traitement vidéo effectué en local sur la Jeston Nano. Elles sont ensuite envoyées à un server OM2M 
+                            par des requêtes HTTP POST. Le standard oneM2M permet d'interconnecter différents objets communiquants et donc favorise l'hétérogéniété. Dans ce cadre il sera 
+                            facile de déployer des caméras en différents points du campus et même d'utiliser d'autres types de capteurs pour une analyse plus riche.
+
+                        <h4>4. La création d'une application web simple</h4>
+                            Enfin, afin de visualiser les informations reçues depuis les caméras facilement et en temps réel, j'ai développé une application web 
+                            très simple. Celle-ci représente sur une carte du campus les emplacements des caméras et les données de manière intuitive. La densité de personnes 
+                            pour une zone est représentée par un code couleur allant du vert au rouge, les flux sont représentés par des flêches bidirectionnelle pour chaque limite d'intérêt 
+                            (portes de batiment par exemple) dont la couleur varie également avec le nombre de personnes s'étant déplacées dans cette direction. 
+                        <p class="sous-part-exp">Mon rôle et mon retour d'expérience</p>
+
+                            Mon rôle au sein de ce stage était donc la réalisation de cette solution de traitement d'images. Mon travail était constitué de la réalisation
+                            du traitement à proprement parlé mais également du choix des composants, du déploiement de la plateforme qui pourra ensuite être réutilisée et de la réalisation
+                            de documentation pour le suivi de mon travail par un autre étudiant ou stagiaire ensuite.<br>
+                            Au cours de ce stage j'ai pu découvrir par une première application concrète certains concepts essentiels de l'Internet des objets. Même si mon travail 
+                            n'a pas été otpimisé en terme de communication ou de temps de traitement, j'ai pu appréhender ces notions de consommation qui sont très importantes dans le 
+                            domaine des objets connectés. 
+                        </br></br>
+
+
+                        Pour plus d'informations concernant ce stage vous pouvez consulter le poster qui synthétise ce travaiL. Vous pouvez également 
+                        visionner la vidéo qui présente plus concretement les différentes étapes de réalisation évoquées.</br>
+
+
+                        <div class="button"><a target="_blank" href="Docs/poster.pdf">Mon poster</a></div>
+                        <div class="button"><a target="_blank" href="https://www.youtube.com/watch?v=gvdcXqfVydU&t=7s">Vidéo</a></div>
+                        
+                        </div>
+
+                        
+                        <div class="div-exp" id="PIR">
+
+                        <h2>Projet d'initation à la recherche (PIR)</h2>
+                        <h3>Vers une maison plus intelligente - Octobre 2018 à Mai 2019</h3>
+                        
+                        <img 
+                            src="Images/PIR.png"
+                            style="width:400px; height:370px; vertical-align: bottom; float: left; margin-top : 20px; margin-right: 50px;"
+                        >
+
+
+                            </br>
+                            <p class="sous-part-exp">Contexte</p>
+                            Lors de ma quatrième année dans la formation Système Embarqués, j'ai participé à un <strong>projet d'intiation à la recherche</strong> sur le thème de la <strong>Maison 
+                            Intelligente</strong>. Il s'agissait de mon premier projet dans le domaine de l'IoT. Ce projet a été mené avec une équipe de 5 personnes. 
+                            Dans un premier temps nous avons travaillé sur l'élaboration d'un état de l'art sur les "smart homes". J'ai alors pu travailler sur la communication machine to 
+                            machine et notamment le standard oneM2M.</br>
+                            </br>
+                            <p class="sous-part-exp">Problématique</p>
+                            Nous avons ensuite défini plus précisemment l'application que nous souhaitions mettre en oeuvre. Nous avons soulever un problème récurrent : le retard, notamment 
+                            des étudiants, aux rendez-vous. Nous avons donc décidé de développer une solution permettant d'accompagenr son utilisateur lors de sa préparation matinale à 
+                            son domicile.
+
+                            <p class="sous-part-exp">Notre solution</p>
+                            Cette solution intègre différents capteurs et objets intelligents. ceux-ci sont positionnés dans la maison de l'utilisateur et leur comportement 
+                            s'adapte à son <strong>Google Calendar</strong>. Par exemple, nous avons défini une routine matinale qui permet à l'utilisateur de visualer le temps qu'il lui reste 
+                            grâce à un changement de couleur de lampes connectées <strong>Philips Hue</strong>. 
+                        </br>
+                            
+                            <p class="sous-part-exp">Mon rôle et mon retour d'expérience</p>
+                            Ce projet constituait une grande part de notre travail personnel au deuxième semestre de 4ème année. Nous nous sommes donc reparti le travail afin de 
+                            mieux gérer notre temps. J'ai principalement travaillé sur la programmation générale, c'est-à-dire sur l'élaboration du code et son architecture. Mon rôle 
+                            consistait donc précipalement à définir les scénarios et les programmer une fois les données nécessaires récupérées sur les différentes API ou l'applications utilisateur.</br>
+                            Cette expérience a été enrichissante puisque nous étions libres et entièrement autonomes dans la réalisation de notre projet. Il a été intéressant de mener à terme un projet 
+                            que nous avions imaginer de toutes pièces. Cependant, certaines technologies que nous ne connaissions pas très bien et que nous avons découvert dans la formation ISS auraient 
+                            simplifié notre travail. 
+
+                        </br>
+                        </br>
+                            Pour découvrir plus en détail la réalisation menée lors de ce projet vous pouvez visualiser notre vidéo de présentation en cliquant sur le bouton ci-dessous.</br>
+                        <div class="button"><a target="_blank" href="https://drive.google.com/file/d/1z8kKfPoPwsWkWejV0jbPnK7-ydz8tn2W/view?usp=sharing">Vidéo</a></div>
+                        </div>
+                        
+
+                        
+         
+                        <div class="div-exp" id="Hacka">
+              
+                        
+                        <h2>Hackathon 2019</h2>
+                        <h3>La mobilité connectée - 5 et 6 Décembre 2019</h3>
+
+                        <img 
+                        src="Images/NAV'ACCESS.png"
+                        style="width:200px; height:200px; vertical-align: bottom; float: left; margin-top : 20px; margin-right: 50px;"
+                        >
+
+
+                        <img 
+                        src="Images/abris.png"
+                        style="width:200px; height:200px; vertical-align: bottom; float: left; margin-top : 20px; margin-right: 50px;"
+                        >       
+
+                        <p class="sous-part-exp">Contexte</p>
+                            Les 5 et 6 décembre 2019 j'ai eu l'occasion de prendre part à un hackathon sur le thême de la <strong>mobilité connectée</strong>.
+                            Dans ce cadre, mon équipe était consituée de 3 étudiants INSA issus de la formation Automatique Electronique et 
+                            2 étudiants ISDAT de formation artistique. Nous avons réfléchi ensemble au déploiement de solutions techniques 
+                            qui peuvent améliorer la mobilité comme nous la connaissons actuellement.</br></br> 
+                            
+
+                        <p class="sous-part-exp">Problématique</p>
+                            Nous nous sommes naturellement penchés sur le problème de l'isolement des <strong>zones périurbaines</strong>. 
+                            Ces zones représentent à nos yeux un réel enjeux social. Nous avons étudié les chiffres relatifs à cette problématique 
+                            et avons pu en tirer les conclusions suivantes : la ville de Toulouse est la 4ème ville la plus étendue de France. Elle 
+                            est très attractive au niveau de l'emploi avec des secteurs en croissance permanente tels que l'aéronautique. De plus en 
+                            plus de jeunes familles viennent alors s'installer dans la périphérie de Toulouse et sont confrontées à ce problème de 
+                            mobilité. </br></br>
+
+                        
+                        <p class="sous-part-exp">Notre solution</p>
+                            Nous avons donc pensé développer un <strong>réseau de navettes connectées</strong> qui pourraient relier, à la demande des clients, les zones périurbaines et 
+                            le centre ville. Notre solution se présenterait sous la forme d'une <strong>carte interactive du réseau</strong>, qui serait disposée dans les arrêts de bus 
+                            déjà existants en centre ville, ou déployée dans de nouveaux arrêts en périphérie. Le client pourrait ainsi commander une navette depuis un 
+                            bouton situé sur la carte et savoir en temps réel dans combien de temps celle-ci peut être disponible. Le trajet des navettes ne 
+                            seraient pas fixe mais adapté en fonction des demandes.</br></br>
+
+                            Nous avons pu déployer un premier prototype de cette idée, que nous avons nommée <strong>Nav'Access</strong>, en utilisant deux cartes Arduino Uno (représentant 
+                            respectivement un bus et un abris), communiquant via des modules LoRa et la plateforme The Things Network. </br></br>
+                            Nous avons eu l'occasion de présenter cette solution devant un jury constitué d'enseignants et d'industriels partenaires de l'événement. 
+                            
+                        <p class="sous-part-exp">Mon rôle et mon retour d'expérience</p>
+                            Il s'agissait du premier hackathon que mon équipe réalisait, nous n'avons pas clairement défini de rôle à chaque membre. 
+                            La solution est venue d'une idée commune aux 5 membres. Elle a ensuite muri avec l'aide des encadrants et au fil de la réalisation. 
+                            Les étudiantes de formation ISDAT se sont principalement concentrées sur la réalisation de croquis de scénarios 
+                            et sur une maquette de la carte interactive. Du coté des étudiants INSA, nous avons travaillé ensemble sur les différents points techniques
+                            de notre solution. </br></br>
+                            Cette expérience a été très enrichissante nous permettant de découvrir un mode de travail différent de ce que nous avons l'habitude de pratiquer. 
+                            Nous avons pu nous consacrer à la réalisation de cette solution dans son intégralité : de l'idée jusqu'à la conception.
+                            Découvrir les idées innovantes d'autres équipes sur le même thème a également été un aspect très intéressant de cet événement. 
+                        </div>
+                    </p>
+                
+            
+
+
+                    <footer>
+                        <div class="logos-conteneur">
+                            <div class="logo"><img src="Logos/logo-insa.png" style="width:90%; height:70px;"></div>
+                            <div class="logo"><img src="Logos/logo-iss.png" style="width:90%; height:70px;"></div>
+                            <div class="logo"><img src="Logos/logo-uni.png" style="width:90%; height:70px;"></div>
+                        </div>
+                        Portfolio de Mathilde Cornille | <a href="descriptive.html">Haut de page ↑</a>
+                    </footer>
+                </div>
+            </p>
+    </body>
+
+</html>
